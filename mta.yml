@@ -1,0 +1,17 @@
+_schema-version: '2.1'
+parameters:
+  hcp-deployer-version: '1.1.0'
+ID: com.yash.demoNeo
+version: 1.0
+modules:
+  - name: com.yash.demoNeo
+    type: com.sap.hcp.html5
+    path: ../dist
+    parameters:
+      name: demoNeo
+      version: 1.12.0
+      active: true
+      display-name: demoNeo     
+      destinations:
+        - name: SampleServiceV2
+          type: HTTP
